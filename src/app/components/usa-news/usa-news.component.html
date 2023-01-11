@@ -1,0 +1,26 @@
+<div class="card-group m-1">
+  <div *ngFor="let news of usaNews.slice(12, 16); let i = index" class="card text-white bg-secondary border-light mb-1" style="width: 18rem;">
+    <div class="card-header bg-light text-dark">{{i+1}}</div>
+    <img src={{news.urlToImage}} class="card-img-top" alt="...">
+    <div class="card-body border-primary">
+      <h6 class="card-title">{{news.title}}</h6><hr class="text-dark">
+      <p class="card-text">{{news.description}}</p>
+    </div>
+    <div class="card-footer"style="background-color: #77767c;">
+      <small class="text-white">Last updated 3 mins ago</small>
+    </div>
+  </div>  
+</div>
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled">
+      <a class="page-link">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav> 
